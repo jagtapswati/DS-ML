@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body  %}
+    <h1> Matoshri College of Engineering </h1>
+    <div class="row p-3">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="col-lg-12">
+                <div class="col-lg-3">
+                    <h3>Enter your years of experience :</h3>
+                    <input class="form-control" type="number" name="yrs" id="yrs">
+                </div>
+                <button class="btn btn-primary mt-3"type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <a href="login">login</a>
+    
+{% endblock body %}
